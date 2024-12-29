@@ -1,70 +1,58 @@
+import React from 'react';
+
 export default function Footer() {
   return (
-    <footer class='text-white body-font'>
-      <div class='container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col'>
-        <a
-          class='flex title-font font-medium items-center md:justify-start justify-center'
-          href='/'
-        >
-          <span class='ml-3 text-xl'>Qwabi</span>
-        </a>
-        <span class='inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start'>
-          <a href='https://facebook.com/'>
-            <svg
-              fill='currentColor'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'
-              class='w-5 h-5'
-              viewBox='0 0 24 24'
-            >
-              <path d='M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z'></path>
-            </svg>
-          </a>
-          <a class='ml-3' href='https://twitter.com/'>
-            <svg
-              fill='currentColor'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'
-              class='w-5 h-5'
-              viewBox='0 0 24 24'
-            >
-              <path d='M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z'></path>
-            </svg>
-          </a>
-          <a class='ml-3' href='https://instagram.com/'>
-            <svg
-              fill='none'
-              stroke='currentColor'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'
-              class='w-5 h-5'
-              viewBox='0 0 24 24'
-            >
-              <rect width='20' height='20' x='2' y='2' rx='5' ry='5'></rect>
-              <path d='M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01'></path>
-            </svg>
-          </a>
-          <a class='ml-3' href='https://www.linkedin.com/in/jacklatimer/'>
-            <svg
-              fill='currentColor'
-              stroke='currentColor'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='0'
-              class='w-5 h-5'
-              viewBox='0 0 24 24'
-            >
-              <path
-                stroke='none'
-                d='M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z'
-              ></path>
-              <circle cx='4' cy='4' r='2' stroke='none'></circle>
-            </svg>
-          </a>
-        </span>
+    <footer id='connect' className='bg-green-900 text-white'>
+      <div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+          <div>
+            <h3 className='text-xl font-semibold mb-4'>About Qwabi Family</h3>
+            <p className='text-gray-300'>
+              Preserving our heritage while building a brighter future for
+              generations to come.
+            </p>
+          </div>
+          <div>
+            <h3 className='text-xl font-semibold mb-4'>Quick Links</h3>
+            <ul className='space-y-2'>
+              <li>
+                <a href='#legacy' className='text-gray-300 hover:text-white'>
+                  Our Legacy
+                </a>
+              </li>
+              <li>
+                <a href='#values' className='text-gray-300 hover:text-white'>
+                  Our Values
+                </a>
+              </li>
+              <li>
+                <a href='#mission' className='text-gray-300 hover:text-white'>
+                  Our Mission
+                </a>
+              </li>
+              <li>
+                <a href='#connect' className='text-gray-300 hover:text-white'>
+                  Connect With Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className='text-xl font-semibold mb-4'>Contact</h3>
+            <p className='text-gray-300'>
+              eSikhwanqeni Village
+              <br />
+              Lady Frere
+              <br />
+              Eastern Cape, South Africa
+            </p>
+          </div>
+        </div>
+        <div className='mt-8 pt-8 border-t border-gray-700'>
+          <p className='text-center text-gray-300'>
+            © {new Date().getFullYear()} Qwabi Family. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
