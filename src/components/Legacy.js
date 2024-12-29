@@ -23,7 +23,7 @@ export default function Legacy() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <p>
-            We are the proud descendants of Sonyethe, Nqumama, and Qwabi,
+            We are the proud descendants of Sonyethe, Nqumama, Gudu & Qwabi,
             tracing our roots back to eSikhwanqeni Village in Lady Frere. Our
             heritage is deeply rooted in the rich soil of the Eastern Cape, a
             land that nurtures both our history and our spirit.
