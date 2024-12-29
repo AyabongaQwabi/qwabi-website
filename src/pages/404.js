@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Footer from '@/components/Footer';
 import { NextSeo } from 'next-seo';
 
 export default function Contact() {
@@ -18,7 +18,6 @@ export default function Contact() {
         <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Header />
 
       <div className='flex flex-col justify-center mx-auto mt-8 mb-16 text-center max-w-2x1'>
         <h1 className='mb-4 text-3xl font-bold tracking-tight text-white md:text-5xl'>
