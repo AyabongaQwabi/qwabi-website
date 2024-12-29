@@ -12,7 +12,7 @@ export default function Hero() {
       />
       <div className='text-center px-4 sm:px-6 lg:px-8 max-w-6xl'>
         <motion.h1
-          className='text-gray-200 z-10 relative dark:text-white mx-auto max-w-5xl font-bold text-4xl/tight sm:text-5xl/tight lg:text-5xl/tight xl:text-7xl/tight'
+          className='text-gray-200 z-10 relative dark:text-white mx-auto max-w-5xl font-bold text-4xl/tight sm:text-5xl/tight lg:text-6xl/tight xl:text-7xl/tight'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -35,14 +35,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
+        ></motion.div>
+        <a
+          href='#legacy'
+          className='relative z-10  mr-12 inline-block bg-yellow-400 text-green-900 font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out hover:bg-yellow-300 hover:shadow-lg'
         >
-          <a
-            href='#legacy'
-            className='inline-block bg-yellow-400 text-green-900 font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out hover:bg-yellow-300 hover:shadow-lg'
-          >
-            Discover Our Legacy
-          </a>
-        </motion.div>
+          Discover Our Legacy
+        </a>
       </div>
     </section>
   );
