@@ -8,9 +8,9 @@ export default function Contact() {
       <NextSeo
         title='Contact: Qwabi'
         description='Contact Us!'
-        canonical='https://Qwabi-1.vercel.app/contact'
+        canonical='https://qwabi.co.za/contact'
         openGraph={{
-          url: 'https://Qwabi-1.vercel.app/contact',
+          url: 'https://qwabi.co.za/contact',
         }}
       />
       <Head>
