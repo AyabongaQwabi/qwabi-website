@@ -16,12 +16,58 @@ export default function Main() {
   return (
     <div className='min-h-screen bg-gradient-to-br from-green-900 via-green-800 to-yellow-900 text-white relative overflow-hidden'>
       <NextSeo
-        title='Qwabi Family | A people steadfast in faith and action.'
-        description='The Qwabi family is an old family situated in the heart of Lady Frere. They are originally Descendants of Sonyethe of the AmaQithi clan in the Thembu nation.We value Humility, Integrity, Honour, and Respect. We are a family that is steadfast in faith and action, and we believe that our actions will make a difference in the world wether little or great. We strive for positive impacts. You can find our home in EsKhwanqeni Village, Lady Frere, Eastern Cape, South Africa. Contact us at contact@qwabi.co.za'
+        title='Qwabi Family | A People Steadfast in Faith and Action'
+        description='The Qwabi family is an old family situated in the heart of Lady Frere. They are descendants of Sonyethe of the AmaQithi clan in the Thembu nation. We value Humility, Integrity, Honour, and Respect. Our faith and actions aim to make a positive difference, whether small or great. Find us in eSikhwanqeni Village, Lady Frere, Eastern Cape, South Africa. This website was built by Ayabonga Qwabi Contact us on contact@qwabi.co.za.'
         canonical='https://qwabi.co.za'
         openGraph={{
           url: 'https://qwabi.co.za',
+          title: 'Qwabi Family | A People Steadfast in Faith and Action',
+          description:
+            'The Qwabi family is an old family situated in the heart of Lady Frere. Descendants of Sonyethe of the AmaQithi clan in the Thembu nation, we strive for positive impacts with Humility, Integrity, Honour, and Respect.',
+          images: [
+            {
+              url: 'https://qwabi.co.za/og.jpg',
+              width: 1200,
+              height: 630,
+              alt: 'Qwabi Family | A People Steadfast in Faith and Action',
+              type: 'image/jpeg',
+            },
+          ],
+          site_name: 'Qwabi Family',
         }}
+        additionalMetaTags={[
+          {
+            name: 'application-name',
+            content: 'Qwabi Family',
+          },
+          {
+            name: 'apple-mobile-web-app-title',
+            content: 'Qwabi Family',
+          },
+          {
+            name: 'theme-color',
+            content: '#1e293b', // Adjust this to match the branding color
+          },
+          {
+            name: 'viewport',
+            content: 'width=device-width, initial-scale=1.0',
+          },
+        ]}
+        additionalLinkTags={[
+          {
+            rel: 'icon',
+            href: '/favicon.ico',
+          },
+          {
+            rel: 'apple-touch-icon',
+            href: '/apple-touch-icon.png', // Include your specific Apple icon file
+            sizes: '180x180',
+          },
+          {
+            rel: 'manifest',
+            href: '/manifest.json',
+          },
+        ]}
       />
       <BackgroundPattern />
       <div className='absolute inset-0 bg-black opacity-30'></div>
