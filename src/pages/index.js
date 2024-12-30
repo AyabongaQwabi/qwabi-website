@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Legacy from '@/components/Legacy';
 import Values from '@/components/Values';
 import Mission from '@/components/Mission';
+import QwabiHistory from '@/components/QwabiHistory';
 import PeopleYouMayKnow from '@/components/PeopleYouMayKnow';
 import Projects from '@/components/Projects';
 import Resources from '@/components/Resources';
@@ -75,6 +76,7 @@ export default function Main() {
         <Navbar />
         <Hero />
         <Legacy />
+        <QwabiHistory />
         <Values />
         <Mission />
         <PeopleYouMayKnow />
