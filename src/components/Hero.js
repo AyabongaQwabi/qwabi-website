@@ -17,9 +17,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Tradition forged in{' '}
+          Children of the soil, builders of{' '}
           <span className='text-transparent bg-clip-text bg-gradient-to-br from-yellow-800 to-green-400'>
-            progress
+            tomorrow
           </span>
         </motion.h1>
         <motion.p
