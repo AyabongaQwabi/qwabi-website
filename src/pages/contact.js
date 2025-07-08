@@ -1,10 +1,14 @@
 import Head from 'next/head';
 import Footer from '@/components/Footer';
 import { NextSeo } from 'next-seo';
+import { Phone, MessageCircle } from 'lucide-react';
 
 export default function Contact() {
+  const phoneNumber = '+27602023083';
+  const whatsappUrl = `https://wa.me/27602023083?text=Hello%20Qwabi%20Family,%20I%20would%20like%20to%20get%20in%20touch.`;
+
   return (
-    <div className='bg-black  text-white'>
+    <div className='bg-black text-white'>
       <NextSeo
         title='Contact: Qwabi'
         description='Contact Us!'
@@ -14,85 +18,69 @@ export default function Contact() {
         }}
       />
       <Head>
-        <title>Create Next App</title>
+        <title>Contact - Qwabi Family</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <section class='text-gray-600 body-font relative'>
-        <div class='container px-5 pt-24 pb-16 mx-auto'>
-          <div class='flex flex-col text-center w-full mb-12'>
-            <h1 class='sm:text-5xl text-2xl font-semibold title-font mb-4 text-white'>
+
+      <section className='text-gray-600 body-font relative'>
+        <div className='container px-5 pt-24 pb-16 mx-auto'>
+          <div className='flex flex-col text-center w-full mb-12'>
+            <h1 className='sm:text-5xl text-2xl font-semibold title-font mb-4 text-white'>
               Contact Us
             </h1>
-            <p class='lg:w-2/3 mx-auto leading-relaxed text-base font-semibold'>
+            <p className='lg:w-2/3 mx-auto leading-relaxed text-base font-semibold'>
               Contact us if you have any issues with the website or just want to
               ask a question!
             </p>
           </div>
-          <div class='lg:w-1/2 md:w-2/3 mx-auto'>
-            <div class='flex flex-wrap -m-2'>
-              <div class='p-2 w-1/2'>
-                <div class='relative'>
-                  <label
-                    for='name'
-                    class='leading-7 text-sm text-white font-semibold'
-                  >
-                    Name
-                  </label>
-                  <input
-                    type='text'
-                    id='name'
-                    name='name'
-                    class='w-full bg-black bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
-                  ></input>
-                </div>
+
+          <div className='lg:w-1/2 md:w-2/3 mx-auto'>
+            {/* Contact Buttons Section */}
+            <div className='text-center'>
+              <h3 className='text-xl font-semibold text-white mb-4'>
+                Contact the Eastern Cape Qwabi Family
+              </h3>
+              <p className='text-gray-300 mb-8'>
+                Reach out to us directly through call or WhatsApp
+              </p>
+
+              <div className='flex flex-col sm:flex-row gap-4 justify-center items-center mb-8'>
+                {/* Call Button */}
+                <a
+                  href={`tel:${phoneNumber}`}
+                  className='flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 min-w-[200px] justify-center'
+                >
+                  <Phone size={20} />
+                  Call Us
+                </a>
+
+                {/* WhatsApp Button */}
+                <a
+                  href={whatsappUrl}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 min-w-[200px] justify-center'
+                >
+                  <MessageCircle size={20} />
+                  WhatsApp
+                </a>
               </div>
-              <div class='p-2 w-1/2'>
-                <div class='relative'>
-                  <label
-                    for='email'
-                    class='leading-7 text-sm text-white font-semibold'
-                  >
-                    Email
-                  </label>
-                  <input
-                    type='email'
-                    id='email'
-                    name='email'
-                    class='w-full bg-black bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
-                  ></input>
-                </div>
+
+              <div className='text-gray-300 mb-8'>
+                <p className='font-semibold text-lg'>{phoneNumber}</p>
               </div>
-              <div class='p-2 w-full'>
-                <div class='relative'>
-                  <label
-                    for='message'
-                    class='leading-7 text-sm text-white font-semibold'
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id='message'
-                    name='message'
-                    class='w-full bg-black bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'
-                  ></textarea>
-                </div>
-              </div>
-              <div class='p-2 w-full'>
-                <button class='flex mx-auto text-black bg-white border-0 py-2 px-8 rounded text-lg'>
-                  Send
-                </button>
-              </div>
-              <div class='p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center'>
-                <a class='text-indigo-500'>contact@website.com</a>
-                <p class='leading-normal my-5'>
-                  Mountain View, California, United States
+
+              <div className='pt-8 border-t border-gray-200 text-center'>
+                <a className='text-indigo-500 text-lg'>bqwabi@gmail.com</a>
+                <p className='leading-normal my-5 text-gray-300'>
+                  eSikhwanqeni Village, Lady Frere, Eastern Cape, South Africa
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <br></br>
+
       <Footer />
     </div>
   );
